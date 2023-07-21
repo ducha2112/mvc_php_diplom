@@ -1,0 +1,231 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&family=Roboto:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+@keyframes arrow {
+  100% {
+    transform: translateY(30px);
+    opacity: 0.7;
+  }
+}
+.arrow {
+  width: 30px;
+  height: 100px;
+  background: url("/public/img/100.png") center no-repeat;
+  background-size: contain;
+  margin: auto 0;
+  animation: arrow 0.8s ease-in-out infinite alternate;
+}
+
+body {
+  background: #fafafa;
+  background: url("/public/img/comp_1.jpg") no-repeat;
+  background-size: cover;
+  font-family: "Barlow", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  color: #444;
+
+}
+.navigate {
+  padding: 20px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+a,
+.container.main .links p a {
+  cursor: pointer;
+  color: #6f6f6f;
+  text-decoration: none;
+  transition: color 1000ms ease;
+}
+a:hover,
+.container.main .links p a:hover {
+  color: #4b8dc7;
+}
+.navigate .link img {
+  width: 50px;
+}
+.navigate .left {
+  width: 300px;
+}
+.navigate .link span {
+  text-align: start;
+  font-size: 20px;
+  color: #333;
+  float: right;
+}
+.navigate .right {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+}
+.navigate .right ul > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.container.main {
+  font-size: 20px;
+  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+}
+.main {
+  min-height: 800px;
+}
+.container.main h4,
+.container.main h3,
+.container.main h2,
+.container.main h1 {
+  margin: 20px 0;
+  font-weight: 800;
+}
+.container.main p {
+  font-size: 17px;
+}
+.container.main .register {
+  font-size: 15px;
+}
+
+.container.main .register.form {
+  text-align: start;
+  width: 600px;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px 0 rgb(5, 5, 5 / 5%);
+  position: relative;
+  left: 30px;
+  margin-bottom: 50px;
+}
+
+.container.main .register.form input,
+.container.main .register.form textarea{
+  display: block;
+  width: 500px;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 1px solid silver;
+  margin: 10px 0;
+  font-size: 14px;
+  box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.5);
+}
+.container.main .register.form textarea {
+  resize: none;
+}
+
+.container.main .button,
+.form button {
+  background: #fafafa;
+  margin: 20px 0;
+  padding: 7px 12px;
+  border: 2px solid rgb(239, 59, 59);
+  border-bottom: 3px solid rgb(239, 59, 59);
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  color: #242222;
+  transition: all 500ms ease;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px -2px rgba(218, 56, 56, 0.5);
+}
+
+.container.main .button:hover,
+.form button:hover {
+  transition: all 500ms ease;
+  background: rgb(239, 59, 59);
+  color: #fff;
+}
+.about {
+  text-align: start;
+}
+
+.success,.error {
+  width: 480px;
+  border-radius: 5px;
+  border: 0;
+  padding: 10px;
+}
+.success {
+  background: #cde6a8;
+}
+.error {
+  background: #f35353;
+  color: #fff;
+}
+.message {
+  color: #f35353;
+}
+
+.container.main .links {
+  background: #e1e5e1;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: start;
+  width: 560px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+
+.container.main .links p {
+  font-size: 18px;
+  color: #1a2934;
+  margin-left: 20px;
+}
+.container.main .links p a {
+  color: #261c1c;
+}
+.container.main .links button {
+  margin-left: 20px;
+}
+
+.container.main .links p a,
+.container.main .links p span {
+  font-size: 18px;
+}
+.container.main .links h5 {
+  color: #333;
+}
+footer {
+  /*width: 100%;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  color: #fff;
+  padding: 20px;
+
+}
+footer .social > i {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50px;
+  background: silver;
+  margin-left: 5px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.6s ease;
+}
+footer .social > i:hover {
+  transition: all 0.6s ease;
+  transform: translateY(-5px);
+}
